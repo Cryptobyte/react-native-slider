@@ -124,6 +124,11 @@ declare module 'react-native-slider' {
      * Used to configure the animation parameters.  These are the same parameters in the Animated library.
      */
     animationConfig?: SpringAnimationConfig | TimingAnimationConfig
+    
+    /**
+     * Set to true to disallow sliding backwards
+     */
+    disableBack?: boolean
   }
 
   const Slider: ComponentClass<SliderProps>

@@ -13,10 +13,13 @@ in progress, ideas and contributions are very welcome.
 
 It is a drop-in replacement for [Slider](http://facebook.github.io/react-native/docs/slider.html).
 
+## This Fork
+This fork just adds a few features that I needed for an internal project, including `disableBack`
+
 ## Install
 
 ```shell
-npm i --save react-native-slider
+npm i --save https://github.com/Cryptobyte/react-native-slider.git
 ```
 
 **Note:** I try to maintain backward compatibility of this component with previous versions of React Native, but due to the nature of the platform, and the existence of breaking changes between releases, it is possible that you need to use a specific version of this component to support the exact version of React Native you are using. See the following table:
@@ -95,7 +98,7 @@ debugTouchArea        | bool     | Yes      | false                     | Set th
 animateTransitions    | bool     | Yes      | false                     | Set to true if you want to use the default 'spring' animation
 animationType         | string   | Yes      | 'timing'                  | Set to 'spring' or 'timing' to use one of those two types of animations with the default [animation properties](https://facebook.github.io/react-native/docs/animations.html).
 animationConfig       | object   | Yes      | undefined                 | Used to configure the animation parameters.  These are the same parameters in the [Animated library](https://facebook.github.io/react-native/docs/animations.html). 
-
+disableBack           | bool     | Yes      | false                     | Set to true to disable sliding backwards
 
 ---
 
