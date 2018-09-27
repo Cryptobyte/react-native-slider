@@ -374,6 +374,10 @@ export default class Slider extends PureComponent {
     if (this.props.disabled) {
       return;
     }
+    
+    if ((this.props.disableBack) && (gestureState.dx < -1)) {
+      return;
+    }
 
     this._setCurrentValue(this._getValue(gestureState));
     this._fireChangeEvent('onSlidingComplete');
